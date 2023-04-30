@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -14,8 +14,11 @@ module.exports = {
       },
       colors: {
         'old-paper': '#E0C9A6',
-        'crystal':'#A6DAE0',
-        'maximum-blue-purple': '#ACA6E0'
+        'crystal': '#A6DAE0',
+        'maximum-blue-purple': '#ACA6E0',
+        'old-paper-shade': {
+          DEFAULT: '#E0C9A6',
+        }
       },
     },
   },
